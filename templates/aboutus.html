@@ -1,0 +1,35 @@
+<ion-view view-title="About Us"> 
+   <ion-content> 
+     <div class="card"> 
+         <div class="item item-divider"> 
+           Our History 
+         </div> 
+         <div class="item item-text-wrap"> 
+           <p> 
+             Started in 2010, Kavity Cakes quickly established itself as a culinary icon par excellence in New Jersey, USA. With its unique brand of world class cakes that can be found nowhere else, it enjoys patronage from the A-list clientele.  Featuring our star chef from the French Culinary institute in New York, you never know what style of cakes will arrive the next time you visit us.
+           </p> 
+           <p> 
+             The venture traces its humble beginnings to The Philippines where the chef's parents are from. 
+           </p> 
+		   <p> 
+             *****All cakes on this app were previously sold to customers*****. 
+           </p> 
+         </div> 
+     </div> 
+     <div class="card"> 
+       <div class="item item-divider"> 
+         Corporate leadership 
+       </div> 
+       <div class="list" ng-repeat="leader in leaders"> 
+         <div class="item item-avatar item-text-wrap"> 
+            <img ng-src="{{baseURL+leader.image}}" alt="{{leader.name}}"> 
+             <h2>{{leader.name}}</h2> 
+             <h3>{{leader.designation}}</h3> 
+             <p>{{leader.description}}</p> 
+         </div> 
+       </div> 
+     </div> 
+   </ion-content> 
+ </ion-view> 
+ 
+ 
